@@ -12,3 +12,4 @@
 /Users/hawat/Projects/MentatsPlaygroud/obj/Debug/net8.0/MentatsPlaygroud.pdb
 /Users/hawat/Projects/MentatsPlaygroud/obj/Debug/net8.0/MentatsPlaygroud.genruntimeconfig.cache
 /Users/hawat/Projects/MentatsPlaygroud/obj/Debug/net8.0/ref/MentatsPlaygroud.dll
+/Users/hawat/Projects/MentatsPlaygroud/obj/Debug/net8.0/MentatsPlaygroud.sourcelink.json
