@@ -15,10 +15,10 @@ public static class Advent04_02{
                     string One = "";
                     string Two = "";
                     foreach(var D in ModifierL){
-                        One += GetDiagonal( i+D.DX, j+D.DY, input);
+                        One += GetCharIfExists( i+D.DX, j+D.DY, input);
                     }
                     foreach(var D in ModifierR){
-                        Two += GetDiagonal( i+D.DX, j+D.DY, input);
+                        Two += GetCharIfExists( i+D.DX, j+D.DY, input);
                     }
                     if (One.Contains('M') && One.Contains('S') && Two.Contains('M') && Two.Contains('S')) WordCount++;
                 }
@@ -27,7 +27,7 @@ public static class Advent04_02{
         return WordCount;
     }
 
-    private static string GetDiagonal(int x, int y, string[] input){
+    private static string GetCharIfExists(int x, int y, string[] input){
         if( x < 0 || x >= input.Length) return "";
         if( y < 0 || y >= input[x].Length) return "";
         return "" + input[x][y];
