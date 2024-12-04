@@ -1,0 +1,14 @@
+/Users/hawat/Projects/MentatsPlaygroud/bin/Debug/net8.0/MentatsPlaygroud
+/Users/hawat/Projects/MentatsPlaygroud/bin/Debug/net8.0/MentatsPlaygroud.deps.json
+/Users/hawat/Projects/MentatsPlaygroud/bin/Debug/net8.0/MentatsPlaygroud.runtimeconfig.json
+/Users/hawat/Projects/MentatsPlaygroud/bin/Debug/net8.0/MentatsPlaygroud.dll
+/Users/hawat/Projects/MentatsPlaygroud/bin/Debug/net8.0/MentatsPlaygroud.pdb
+/Users/hawat/Projects/MentatsPlaygroud/obj/Debug/net8.0/MentatsPlaygroud.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hawat/Projects/MentatsPlaygroud/obj/Debug/net8.0/MentatsPlaygroud.AssemblyInfoInputs.cache
+/Users/hawat/Projects/MentatsPlaygroud/obj/Debug/net8.0/MentatsPlaygroud.AssemblyInfo.cs
+/Users/hawat/Projects/MentatsPlaygroud/obj/Debug/net8.0/MentatsPlaygroud.csproj.CoreCompileInputs.cache
+/Users/hawat/Projects/MentatsPlaygroud/obj/Debug/net8.0/MentatsPlaygroud.dll
+/Users/hawat/Projects/MentatsPlaygroud/obj/Debug/net8.0/refint/MentatsPlaygroud.dll
+/Users/hawat/Projects/MentatsPlaygroud/obj/Debug/net8.0/MentatsPlaygroud.pdb
+/Users/hawat/Projects/MentatsPlaygroud/obj/Debug/net8.0/MentatsPlaygroud.genruntimeconfig.cache
+/Users/hawat/Projects/MentatsPlaygroud/obj/Debug/net8.0/ref/MentatsPlaygroud.dll
