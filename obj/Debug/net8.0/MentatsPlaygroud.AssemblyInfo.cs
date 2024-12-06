@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MentatsPlaygroud")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f2ea0e7c0fd0b7f9e52ecadf9c69edced29c7fb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58c8ce6e8e89a801eabae6347ab1b22c14c23839")]
 [assembly: System.Reflection.AssemblyProductAttribute("MentatsPlaygroud")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MentatsPlaygroud")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
