@@ -8,24 +8,32 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/Users/hawat/.nuget/packages/": {}
+    "C:\\Users\\Hawat\\.nuget\\packages\\": {},
+    "E:\\VSSC\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/hawat/Projects/MentatsPlaygroud/MentatsPlaygroud.csproj",
+      "projectUniqueName": "F:\\Code\\MentatsPlayground\\MentatsPlaygroud.csproj",
       "projectName": "MentatsPlaygroud",
-      "projectPath": "/Users/hawat/Projects/MentatsPlaygroud/MentatsPlaygroud.csproj",
-      "packagesPath": "/Users/hawat/.nuget/packages/",
-      "outputPath": "/Users/hawat/Projects/MentatsPlaygroud/obj/",
+      "projectPath": "F:\\Code\\MentatsPlayground\\MentatsPlaygroud.csproj",
+      "packagesPath": "C:\\Users\\Hawat\\.nuget\\packages\\",
+      "outputPath": "F:\\Code\\MentatsPlayground\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "E:\\VSSC\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/hawat/.nuget/NuGet/NuGet.Config"
+        "F:\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -64,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.402/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

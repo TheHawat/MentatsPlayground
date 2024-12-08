@@ -15,7 +15,8 @@ public static class AssignmentInitializer{
         return CompleteTask(input.ToArray(), args[0]);
     }
     private static string RunWithFile(string[] args){
-        string filestring = File.ReadAllText($"/Users/Hawat/Projects/MentatsPlaygroud/AdventOfCode/{args[1]}.txt");
+        //string filestring = File.ReadAllText($"/Users/Hawat/Projects/MentatsPlaygroud/AdventOfCode/{args[1]}.txt");
+        string filestring = File.ReadAllText($"{args[1]}");
         string[] lines = filestring.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
         return CompleteTask(lines, args[0]);
     }
