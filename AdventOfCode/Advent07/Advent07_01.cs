@@ -15,7 +15,7 @@ public static class Advent07_01{
         string[] SumAndSeries = line.Split(": ");
         double Sum = double.Parse(SumAndSeries[0]);
         int[] Series = Array.ConvertAll(SumAndSeries[1].Split(' '), x => int.Parse(x));
-        Array.Sort(Series);
+        //Array.Sort(Series);
         value = DoTheMagic(Sum, Series);
         //foreach(var num in Series) Console.WriteLine(num);
         //Console.WriteLine(SumAndSeries[1]);
