@@ -59,7 +59,10 @@ public static class Advent09_01{
     {
         int Multiplier = 0;
         double Sum = 0;
-        foreach (var l in transformedLine) {Sum+=Multiplier * l; Multiplier++;}
+        foreach (var l in transformedLine) {
+            if (l == -1 ) break; // I hate this line. It can be done better for sure.
+            Sum+=Multiplier * l; Multiplier++;
+            }
         return Sum;
     }
 }
