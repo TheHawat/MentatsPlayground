@@ -23,7 +23,7 @@ public static class Advent11_01{
             }
             int Halfsies = CurrentStone.Length/2;
             State.Enqueue(CurrentStone[..Halfsies]);
-            string SecondHalf = CurrentStone[(Halfsies)..].TrimStart('0');
+            string SecondHalf = CurrentStone[Halfsies..].TrimStart('0');
             State.Enqueue(SecondHalf == "" ? "0" : SecondHalf); 
         }
         return State;
