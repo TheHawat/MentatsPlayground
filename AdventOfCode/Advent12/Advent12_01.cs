@@ -20,7 +20,6 @@ public static class Advent12_01{
         int FenceOfThisField = 0;
         int CountOfThisField = 0;
         FenceOfThisField += MoveAroundTheField(ref input, ref visited, x, y, CurrentProduce, ref CountOfThisField);
-        Console.WriteLine($"CurrentProduce: {input[x][y]}    Count:{CountOfThisField}     Fence:{FenceOfThisField}");
         return CountOfThisField * FenceOfThisField;
     }
 
