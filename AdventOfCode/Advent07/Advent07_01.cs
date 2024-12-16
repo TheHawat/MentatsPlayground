@@ -23,6 +23,12 @@ public static class Advent07_01{
     }
 
     private static int DoTheMagic(double sum, int[] series){
+        int[] Operators = [];
+        Array.Fill(Operators, 0);
+        
         return -1;
+    }
+    private static void AddOne(ref int[] Ops){
+        
     }
 }
