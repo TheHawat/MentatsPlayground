@@ -37,10 +37,9 @@ public class LanGraph{
         Connections = Result;
     }
 
-    static bool IsValid(string[] input)
-    {
-        return input.Distinct().Count() == 3 && // Ensure no duplicates
-               input.Any(s => s.StartsWith("t")); // At least one starts with "t"
+    static bool IsValid(string[] input){
+        return input.Distinct().Count() == 3 &&
+               input.Any(s => s.StartsWith("t"));
     }
 
     public void PrintAllConnections(){
