@@ -1,5 +1,6 @@
 public static class Sapho{
     public static readonly (int X, int Y)[] FourWay = {(-1, 0), (0, 1), (1, 0), (0, -1)};
+    public static readonly (int X, int Y)[] FourWayRight = {(0, 1), (1, 0), (0, -1),(-1, 0)};
     public static readonly (int X, int Y, char Dir)[] DirectedFourWay = {(-1, 0, '^'), (0, 1, '>'), (1, 0, 'v'), (0, -1, '<')};
     public static readonly (int X, int Y)[] EightWay = {(1, 0), (-1, 0), (0, 1), (0, -1), (1, 1), (-1, -1), (-1, 1), (1, -1) };
     public static readonly char[] Directions = {'^', '>', 'v', '<'};
