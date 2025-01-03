@@ -1,4 +1,57 @@
 [*.cs]
+csharp_new_line_before_open_brace = none
+
+# Require PascalCase for class, method, and property names
+dotnet_naming_rule.class_and_method_names.severity = warning
+dotnet_naming_rule.class_and_method_names.symbols = class_and_method_symbols
+dotnet_naming_rule.class_and_method_names.style = pascal_case
+
+dotnet_naming_symbols.class_and_method_symbols.applicable_kinds = class, method
+dotnet_naming_symbols.class_and_method_symbols.applicable_accessibilities = *
+dotnet_naming_symbols.class_and_method_symbols.required_modifiers = *
+
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+dotnet_naming_style.pascal_case.required_prefix = 
+dotnet_naming_style.pascal_case.required_suffix = 
+
+# Require camelCase for local variables and parameters
+dotnet_naming_rule.local_and_parameter_names.severity = warning
+dotnet_naming_rule.local_and_parameter_names.symbols = local_and_parameter_symbols
+dotnet_naming_rule.local_and_parameter_names.style = camel_case
+
+dotnet_naming_symbols.local_and_parameter_symbols.applicable_kinds = local, parameter
+dotnet_naming_symbols.local_and_parameter_symbols.applicable_accessibilities = *
+dotnet_naming_symbols.local_and_parameter_symbols.required_modifiers = *
+
+dotnet_naming_style.camel_case.capitalization = camel_case
+dotnet_naming_style.camel_case.required_prefix = 
+dotnet_naming_style.camel_case.required_suffix = 
+
+# Require SCREAMING_CASE for constants
+dotnet_naming_rule.constant_names.severity = warning
+dotnet_naming_rule.constant_names.symbols = constant_symbols
+dotnet_naming_rule.constant_names.style = screaming_case
+
+dotnet_naming_symbols.constant_symbols.applicable_kinds = field
+dotnet_naming_symbols.constant_symbols.applicable_accessibilities = *
+dotnet_naming_symbols.constant_symbols.required_modifiers = const
+
+dotnet_naming_style.screaming_case.capitalization = all_upper
+dotnet_naming_style.screaming_case.required_prefix = 
+dotnet_naming_style.screaming_case.required_suffix = 
+
+# Require _camelCase for private fields
+dotnet_naming_rule.private_field_names.severity = warning
+dotnet_naming_rule.private_field_names.symbols = private_field_symbols
+dotnet_naming_rule.private_field_names.style = underscore_camel_case
+
+dotnet_naming_symbols.private_field_symbols.applicable_kinds = field
+dotnet_naming_symbols.private_field_symbols.applicable_accessibilities = private
+dotnet_naming_symbols.private_field_symbols.required_modifiers = 
+
+dotnet_naming_style.underscore_camel_case.capitalization = camel_case
+dotnet_naming_style.underscore_camel_case.required_prefix = _
+dotnet_naming_style.underscore_camel_case.required_suffix = 
 
 # CS8602: Dereference of a possibly null reference.
 dotnet_diagnostic.CS8602.severity = silent

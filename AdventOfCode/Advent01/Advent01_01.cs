@@ -1,9 +1,8 @@
-public static class Advent01_01
-{
-    public static string GetResult(string[] input){
-        List<int> Left = new();
-        List<int> Right = new();
-        for (int i = 0; i < input.Length; i++){
+public static class Advent01_01 {
+    public static string GetResult(string[] input) {
+        List<int> Left = [];
+        List<int> Right = [];
+        for (int i = 0; i < input.Length; i++) {
             int[] ints = Array.ConvertAll(input[i].Split("   "), x => int.Parse(x));
             Left.Add(ints[0]);
             Right.Add(ints[1]);

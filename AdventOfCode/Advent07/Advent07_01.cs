@@ -1,17 +1,17 @@
 
 
-public static class Advent07_01{
-    public static string GetResult(string[] input){return SumAllVialableSeries(input).ToString();}
+public static class Advent07_01 {
+    public static string GetResult(string[] input) { return SumAllVialableSeries(input).ToString(); }
 
-    private static int SumAllVialableSeries(string[] input){
+    private static int SumAllVialableSeries(string[] input) {
         int SumOfVialableSeries = 0;
-        foreach(var line in input){
-            if (CheckOneLineVialability(line, out int value)) SumOfVialableSeries+=value; 
+        foreach (var line in input) {
+            if (CheckOneLineVialability(line, out int value)) SumOfVialableSeries += value;
         }
         return SumOfVialableSeries;
     }
 
-    private static bool CheckOneLineVialability(string line, out int value){
+    private static bool CheckOneLineVialability(string line, out int value) {
         string[] SumAndSeries = line.Split(": ");
         double Sum = double.Parse(SumAndSeries[0]);
         int[] Series = Array.ConvertAll(SumAndSeries[1].Split(' '), x => int.Parse(x));
@@ -22,13 +22,13 @@ public static class Advent07_01{
         return false;
     }
 
-    private static int DoTheMagic(double sum, int[] series){
+    private static int DoTheMagic(double sum, int[] series) {
         int[] Operators = [];
         Array.Fill(Operators, 0);
-        
+
         return -1;
     }
-    private static void AddOne(ref int[] Ops){
-        
+    private static void AddOne(ref int[] Ops) {
+
     }
 }
