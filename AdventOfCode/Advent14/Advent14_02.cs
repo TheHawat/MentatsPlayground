@@ -12,7 +12,7 @@ public static class Advent14_02 {
     }
 
     public static int HandleRobots(string[] input) {
-        int Sum = 0, BoardX = 11, BoardY = 7;
+        int BoardX = 11, BoardY = 7;
         List<Robot> AllTheCrazyOnes = [];
         for (int i = 0; i < input.Length; i++) {
             int[] ConvertedLine = ReadPosition(input[i]);

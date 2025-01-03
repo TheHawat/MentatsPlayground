@@ -1,39 +1,39 @@
 public class Turing {
-    Dictionary<string, bool> States = [];
-    List<string[]> Instructions = [];
+    Dictionary<string, bool> _states = [];
+    List<string[]> _instructions = [];
 
     public void SetState(string Addr, bool Flag) {
-        if (States.ContainsKey(Addr)) States[Addr] = Flag;
-        else States.Add(Addr, Flag);
+        if (_states.ContainsKey(Addr)) _states[Addr] = Flag;
+        else _states.Add(Addr, Flag);
     }
 
     public void AddInstruction(string line) {
         string NewLine = line.Replace("-> ", "");
         string[] SplitLine = NewLine.Split(" ");
-        Instructions.Add(SplitLine);
+        _instructions.Add(SplitLine);
     }
 
     private bool CheckInstruction(int x) {
-        if (!States.ContainsKey(Instructions[x][0]) || !States.ContainsKey(Instructions[x][2])) return false;
-        if (!States.ContainsKey(Instructions[x][3])) States.Add(Instructions[x][3], false);
-        if (Instructions[x][1] == "XOR") States[Instructions[x][3]] = States[Instructions[x][0]] ^ States[Instructions[x][2]];
-        else if (Instructions[x][1] == "AND") States[Instructions[x][3]] = States[Instructions[x][0]] && States[Instructions[x][2]];
-        else if (Instructions[x][1] == "OR") States[Instructions[x][3]] = States[Instructions[x][0]] || States[Instructions[x][2]];
+        if (!_states.ContainsKey(_instructions[x][0]) || !_states.ContainsKey(_instructions[x][2])) return false;
+        if (!_states.ContainsKey(_instructions[x][3])) _states.Add(_instructions[x][3], false);
+        if (_instructions[x][1] == "XOR") _states[_instructions[x][3]] = _states[_instructions[x][0]] ^ _states[_instructions[x][2]];
+        else if (_instructions[x][1] == "AND") _states[_instructions[x][3]] = _states[_instructions[x][0]] && _states[_instructions[x][2]];
+        else if (_instructions[x][1] == "OR") _states[_instructions[x][3]] = _states[_instructions[x][0]] || _states[_instructions[x][2]];
         return true;
     }
 
     public void ProcessAllInstructions() {
         int i = 0;
-        while (Instructions.Count > 0) {
-            if (CheckInstruction(i)) Instructions.RemoveAt(i);
+        while (_instructions.Count > 0) {
+            if (CheckInstruction(i)) _instructions.RemoveAt(i);
             i++;
-            if (i >= Instructions.Count) i = 0;
+            if (i >= _instructions.Count) i = 0;
         }
     }
 
     public string GetValue() {
         string Binary = string.Concat(
-            States
+            _states
                 .Where(x => x.Key.StartsWith('z'))
                 .OrderByDescending(x => x.Key)
                 .Select(x => x.Value ? "1" : "0")
@@ -43,7 +43,7 @@ public class Turing {
 
     public string GetValue(char C) {
         string Binary = string.Concat(
-            States
+            _states
                 .Where(x => x.Key.StartsWith(C))
                 .OrderByDescending(x => x.Key)
                 .Select(x => x.Value ? "1" : "0")
@@ -52,7 +52,7 @@ public class Turing {
     }
 
     public void PrintAllStates() {
-        foreach (var kvp in States.OrderByDescending(x => x.Key)) {
+        foreach (var kvp in _states.OrderByDescending(x => x.Key)) {
             int value = kvp.Value ? 1 : 0;
             Console.WriteLine($"{kvp.Key}:   {value}");
         }

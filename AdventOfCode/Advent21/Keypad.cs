@@ -1,20 +1,20 @@
 
 class Keypad {
     public Key[][] Keys = [];
-    char[][] Board = [];
+    char[][] _board = [];
     public Dictionary<char, (int, int)> KeyAddress = [];
     public Dictionary<string, int> Distances = [];
     public (int X, int Y, char Dir)[] DirectedFourWay = [];
     public Keypad(string[] input, bool makingArrows) {
         Keys = new Key[input.Length][];
-        Board = new char[input.Length][];
+        _board = new char[input.Length][];
         for (int i = 0; i < input.Length; i++) {
             Keys[i] = new Key[input[i].Length];
-            Board[i] = new char[input[i].Length];
+            _board[i] = new char[input[i].Length];
             for (int j = 0; j < input[i].Length; j++) {
                 Keys[i][j] = new Key(input[i][j], input.Length, input[i].Length);
-                Board[i][j] = input[i][j];
-                KeyAddress.Add(Board[i][j], (i, j));
+                _board[i][j] = input[i][j];
+                KeyAddress.Add(_board[i][j], (i, j));
             }
         }
         InitDistances();
