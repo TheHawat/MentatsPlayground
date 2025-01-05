@@ -1,4 +1,4 @@
-public static class Advent07_01 {
+public static class Advent07_02 {
     public static string GetResult(string[] input) { 
         return SumAllVialableSeries(input).ToString();
     }
